@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+}
+
+.formContainer{
+    width: 65vw;
+    min-height: 100vh;
+    background-color: white;
+    margin: auto;
+    padding: 5vh;
+}
+
+.formContainer>h1{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin: 1vmax;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+}
+
+#form > input{
+    margin: 0.7vmax;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding-left: 2vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+#form > input:focus{
+    outline: none;
+}
+
+#form > #taskName{
+    height: 2.5vmax;
+    font-size: 1.5vmax;
+    
+}
+
+#form > #task{
+    height: 3.3vmax;
+    font-size: 2vmax;
+}
+
+#addBtn{
+    margin: 0.8vmax;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding-left: 2vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 2.7vmax;
+    background-color: black;
+    color: #fff;
+    font-size: 1.3vmax;
+    transition: all 0.5s;
+}
+
+#addBtn:hover{
+    background-color: #fff;
+    color: black;
+    border: 2px solid black;
+}
+
+
+#taskList{
+    /* border: 2px solid red; */
+    margin: 1vmax 0;
+    padding: 3vmax;
+}
+
+.taskcontainer{
+    display: flex;
+    background-color: blueviolet;
+    margin:  2vmax 0;
+}
+
+.taskcontainer > p{
+    /* height: 3vmax; */
+    padding-left: 3vmax;
+    padding-top: 10px;
+    padding: 10px 3vmax;
+    color: #fff;
+    font-size: 1.3vmax;
+    transition: all 0.5s;
+    width: 95%;
+}
+
+.taskcontainer> img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}

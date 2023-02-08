@@ -2,7 +2,6 @@ const title = document.getElementById("title");
 const description = document.getElementById("description");
 const addBtn = document.getElementById("addBtn");
 const taskList = document.getElementById("taskList");
-// console.log(localStorage.getItem(something));
 const task = localStorage.getItem("task") ? JSON.parse(localStorage.getItem("task")) : [];
 
 showAllTask();
@@ -10,8 +9,6 @@ showAllTask();
 
 addEventListener("submit", (e) => {
     e.preventDefault();
-
-    console.log("submited");
     removeAllTask();
 
     task.push({ title: title.value, description: description.value });
